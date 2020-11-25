@@ -7,5 +7,5 @@ RUN unzip stanford-corenlp-latest.zip
 WORKDIR /stanford-corenlp-4.2.0
 RUN echo 'for file in `find /app/stanford-corenlp-4.2.0 -name "*.jar"`;' >> ~/.bashrc
 RUN echo 'do export CLASSPATH="$CLASSPATH:`realpath $file`"; done' >> ~/.bashrc
-RUN source ~/.bashrc
+RUN . ~/.bashrc
 CMD [ "java", "edu.stanford.nlp.pipeline.StanfordCoreNLPServer", "-port", "$PORT", "-timeout", "15000" ]
