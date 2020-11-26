@@ -5,4 +5,4 @@ RUN wget http://nlp.stanford.edu/software/stanford-corenlp-latest.zip
 RUN unzip stanford-corenlp-latest.zip
 WORKDIR /stanford-corenlp-4.2.0
 RUN export CLASSPATH=$CLASSPATH:/stanford-corenlp-latest/stanford-corenlp-4.2.0/*:
-CMD java -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port $PORT
+CMD java -mx16g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port $PORT
