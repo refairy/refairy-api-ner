@@ -1,4 +1,5 @@
 <h2>소개</h2>
+'Named Entity Recognition(개체명 인식) API 서버'<br>
 대한민국 온라인 수호 프로젝트, 리페어리의 API NER 서버입니다.
 
 <br><h2>시작하기</h2>
